@@ -29,9 +29,9 @@
         </activity>
         <activity android:name=".REGISTER3" >
         </activity>
-        <activity android:name=".USERINFO" >
+        <activity android:name=".MYINFOMATION" >
         </activity>
-        <activity android:name=".CourseActivity" >
+        <activity android:name=".COURSEDETAIL" >
         </activity>
         <activity android:name=".MYCOURSE" >
         </activity>

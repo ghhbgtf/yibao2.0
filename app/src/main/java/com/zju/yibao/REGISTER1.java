@@ -48,24 +48,25 @@ public class REGISTER1 extends AppCompatActivity {
 
         nextRegister = (Button) findViewById(R.id.btn_nextRegister);
         nextRegister.setOnClickListener(listener);
+
         conformPwd = (EditText) findViewById(R.id.conformPasswdText);
         Drawable drawable1 = getResources().getDrawable(R.drawable.class_password);
-        drawable1.setBounds(0, 0, 150, 150);
+        drawable1.setBounds(0, 0, 70, 70);
         conformPwd.setCompoundDrawables(drawable1, null, null, null);
 
         passwd = (EditText) findViewById(R.id.passwdText);
         Drawable drawable2 = getResources().getDrawable(R.drawable.class_password);
-        drawable2.setBounds(0, 0, 150, 150);
+        drawable2.setBounds(0, 0, 70, 70);
         passwd.setCompoundDrawables(drawable2, null, null, null);
 
         user = (EditText) findViewById(R.id.user_text);
         Drawable drawable3 = getResources().getDrawable(R.drawable.class_username);
-        drawable3.setBounds(0, 0, 150, 150);
+        drawable3.setBounds(0, 0, 70, 70);
         user.setCompoundDrawables(drawable3, null, null, null);
 
         email = (EditText) findViewById(R.id.emailText);
         Drawable drawable4 = getResources().getDrawable(R.drawable.class_email);
-        drawable4.setBounds(0, 0, 150, 150);
+        drawable4.setBounds(0, 0, 70, 70);
         email.setCompoundDrawables(drawable4, null, null, null);
     }
     @Override

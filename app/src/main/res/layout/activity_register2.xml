@@ -1,77 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <include layout="@layout/toolbar_default"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_default" />
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/class_flag_true"/>
+                android:background="@drawable/class_flag_true" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="基本信息"
-                android:textColor="@color/colorflag_true"/>
+                android:textColor="@color/colorflag_true" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/class_flag_true"/>
+                android:background="@drawable/class_flag_true" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="学生信息"
-                android:textColor="@color/colorflag_true"/>
+                android:textColor="@color/colorflag_true" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:orientation="vertical"
             android:layout_weight="1"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/class_flag"/>
+                android:background="@drawable/class_flag" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="注册完成"
-                android:textColor="@color/colorflag_false"/>
+                android:textColor="@color/colorflag_false" />
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:layout_weight="1"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="50.0dip"
             android:layout_marginLeft="12.0dip"
             android:layout_marginRight="12.0dip"
             android:layout_marginTop="15.0dip"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/corner_edittext"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -79,25 +93,28 @@
                 android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:text="姓名"
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
+
             <EditText
-                android:layout_width="wrap_content"
                 android:id="@+id/edit_register_name"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12.0dip"
                 android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:layout_weight="1"
-                android:background="@null"/>
+                android:background="@null" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="50.0dip"
             android:layout_marginLeft="12.0dip"
             android:layout_marginRight="12.0dip"
             android:layout_marginTop="15.0dip"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/corner_edittext"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,25 +122,29 @@
                 android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:text="性别"
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
+
             <EditText
-                android:layout_width="wrap_content"
                 android:id="@+id/edit_register_sex"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12.0dip"
                 android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:layout_weight="1"
-                android:background="@null"/>
+                android:background="@null"
+                android:editable="false" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="50.0dip"
             android:layout_marginLeft="12.0dip"
             android:layout_marginRight="12.0dip"
             android:layout_marginTop="15.0dip"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/corner_edittext"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -131,25 +152,29 @@
                 android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:text="年龄"
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
+
             <EditText
-                android:layout_width="wrap_content"
                 android:id="@+id/edit_register_age"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12.0dip"
                 android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:layout_weight="1"
-                android:background="@null"/>
+                android:background="@null"
+                android:editable="false" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="50.0dip"
             android:layout_marginLeft="12.0dip"
             android:layout_marginRight="12.0dip"
             android:layout_marginTop="15.0dip"
-            android:background="@drawable/rounded_edittext"
+            android:background="@drawable/corner_edittext"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -157,25 +182,28 @@
                 android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:text="爱好"
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
+
             <EditText
-                android:layout_width="wrap_content"
                 android:id="@+id/edit_register_preference"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12.0dip"
                 android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="12.0dip"
                 android:layout_marginTop="12.0dip"
                 android:layout_weight="1"
-                android:background="@null"/>
+                android:background="@null"
+                android:editable="false" />
         </LinearLayout>
+
         <Button
             android:id="@+id/btn_nextRegister2"
-            android:background="@drawable/corners_button"
             android:layout_width="fill_parent"
             android:layout_height="50.0dip"
             android:layout_marginLeft="12.0dip"
             android:layout_marginRight="12.0dip"
             android:layout_marginTop="20dp"
+            android:background="@drawable/corners_button"
             android:singleLine="true"
             android:text="下一步"
             android:textColor="#ffffffff"

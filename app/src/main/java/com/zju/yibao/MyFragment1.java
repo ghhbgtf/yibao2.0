@@ -54,7 +54,7 @@ public class MyFragment1 extends android.app.Fragment implements AdapterView.OnI
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        root = inflater.inflate(R.layout.fragment_show_1, null);
+        root = inflater.inflate(R.layout.fragment_1, null);
         return root;
     }
 
