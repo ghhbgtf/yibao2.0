@@ -63,6 +63,9 @@ public class MyFragment2 extends android.app.Fragment implements View.OnClickLis
             case 0:
                 showMyCourses();
                 break;
+            case 1:
+                showMyOrders();
+                break;
             case 2:
                 showMyDiscounts();
                 break;
@@ -140,6 +143,44 @@ public class MyFragment2 extends android.app.Fragment implements View.OnClickLis
                 "]";
 
         Intent intent = new Intent(getActivity(), MYCOURSE.class);
+        intent.putExtra("data", string);
+        startActivity(intent);
+    }
+
+    private void showMyOrders() {
+
+        String string = "{\n" +
+                "    \"orders\":[\n" +
+                "        {\n" +
+                "            \"ordersCarId\":\"23123123 \",\n" +
+                "            \"studentId\":\"34534534 \",\n" +
+                "            \"courseName\":\"声乐课程 \",\n" +
+                "            \"teacherName\":\"王老师 \",\n" +
+                "            \"teacherAge\":\"23 \",\n" +
+                "            \"organizationName\":\"科瑞教育 \",\n" +
+                "            \"organizationAddr\":\"浙江省宁波市\",\n" +
+                "            \"education\":\"硕士\",\n" +
+                "            \"time\":\"2016-02-05 15:22:20\",\n" +
+                "            \"count\":2,\n" +
+                "            \"totalPrice\":300.01\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"ordersCarId\":\"23123123 \",\n" +
+                "            \"studentId\":\"34534534 \",\n" +
+                "            \"courseName\":\"声乐课程2 \",\n" +
+                "            \"teacherName\":\"王老师 \",\n" +
+                "            \"teacherAge\":\"23 \",\n" +
+                "            \"organizationName\":\"科瑞教育 \",\n" +
+                "            \"organizationAddr\":\"浙江省宁波市\",\n" +
+                "            \"education\":\"硕士\",\n" +
+                "            \"time\":\"2016-02-05 15:22:20\",\n" +
+                "            \"count\":2,\n" +
+                "            \"totalPrice\":300.01\n" +
+                "        }\n" +
+                "    ]\n" +
+                "}";
+
+        Intent intent = new Intent(getActivity(), MYORDERS.class);
         intent.putExtra("data", string);
         startActivity(intent);
     }
